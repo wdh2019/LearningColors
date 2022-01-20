@@ -30,6 +30,7 @@ export default defineComponent({
       colorHexs: ['3888E3', '458FE4', '5398E6', '61A0E8', '70A9E8', '7EB2ED', '8CBAEF', '9AC2F1', 'A9CBF3', 'B7D4F5', 'C6DDF7', 'D4E5F9', 'E2EEFB', 'F1F6FD', 'FFFFFF'],
       textColors: ['fff', 'fff', 'fff', 'fff', 'fff', '000', '000', '000', '000', '000', '000', '000', '000', '000', '000']
     }
+// rgb:
 // 56,136,227
 // 69,143,228
 // 83,152,230

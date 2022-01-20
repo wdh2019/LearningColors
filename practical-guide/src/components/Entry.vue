@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <div class="next">
+      <Next href="/ColorModels" />
+    </div>
     <div class="left">
       <h1>
         Creating a beautiful color palette is all about balancing
@@ -76,9 +79,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Next from './common/Next.vue'
 
 export default defineComponent({
   name: 'Entry',
+  components: {
+    Next
+  },
   data() {
     return {
       com: 'Tint'
@@ -87,7 +94,7 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .container {
   width: 100vw;
   height: 100vh;
@@ -96,54 +103,54 @@ export default defineComponent({
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
 
-.left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40vw;
-  height: 100vh;
-  padding: 0 10vw 0 10vw;
-  line-height: 2;
-}
+  .next {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+  }
 
-.left a {
-  text-decoration: none;
-}
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 100vh;
+    padding: 0 10vw 0 10vw;
+    line-height: 2;
+    a {
+      text-decoration: none;
+      &:link, &:visited, &:active {
+        color: #5D84DF;
+      }
+      &:hover {
+        color: #80ABF9;
+      }
+    }
+  }
 
-.left a:link, .left a:visited, .left a:active {
-  color: #5D84DF;
-}
+  .right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+    .palette {
+      width: 10vw;
+      height: 30vh;
+      padding: 10px;
+      margin: 0 15px;
+      background: #fff;
+      border-radius: 10px;
+      .color {
+        height: 10vw;
+      }
+      .desc {
+        font-size: 0.8rem;
+        padding: 1rem 0 0 0.2rem;
+      }
+    }
+  }
 
-.left a:hover {
-  color: #80ABF9;
 }
-
-.right {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 60vw;
-  height: 100vh;
-}
-
-.palette {
-  width: 10vw;
-  height: 30vh;
-  padding: 10px;
-  margin: 0 15px;
-  background: #fff;
-  border-radius: 10px;
-}
-
-.palette .color {
-  height: 10vw;
-}
-
-.palette .desc {
-  font-size: 0.8rem;
-  padding: 1rem 0 0 0.2rem;
-}
-
 </style>

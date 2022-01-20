@@ -6,6 +6,7 @@ import Tint from '@/components/Tint.vue'
 import Tone from '@/components/Tone.vue'
 import Shade from '@/components/Shade.vue'
 import Temperature from '@/components/Temperature.vue'
+import ColorModels from '@/components/ColorModels.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -31,6 +32,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/Temperature',
     component: Temperature
+  },
+  {
+    path: '/ColorModels',
+    component: ColorModels
   }
 ]
 
