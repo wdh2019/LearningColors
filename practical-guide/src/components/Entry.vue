@@ -104,12 +104,6 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
 
-  .next {
-    position: absolute;
-    top: 50%;
-    right: 50px;
-  }
-
   .left {
     display: flex;
     justify-content: center;

@@ -24,4 +24,10 @@ export default defineComponent({})
   height: 100vh;
   overflow: hidden;
 }
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+}
 </style>

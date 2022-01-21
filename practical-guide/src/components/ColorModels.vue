@@ -1,6 +1,10 @@
 <template>
   <div class="container">
 
+    <div class="next">
+      <Next href="/ColorGroupings" />
+    </div>
+
     <div class="title">
       <h1>Color Models</h1>
     </div>
@@ -120,9 +124,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Next from './common/Next.vue'
 
 export default defineComponent({
   name: 'ColorModels',
+  components: {
+    Next
+  },
   data() {
     return {
       showCMYK: false,
