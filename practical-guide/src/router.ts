@@ -8,6 +8,9 @@ import Shade from '@/components/Shade.vue'
 import Temperature from '@/components/Temperature.vue'
 import ColorModels from '@/components/ColorModels.vue'
 import ColorGroupings from '@/components/ColorGroupings.vue'
+import ColorCategories_Intro from '@/components/colorCategories/Intro.vue'
+import ColorCategories_Main from '@/components/colorCategories/Main.vue'
+import ColorCombinations from '@/components/ColorCombinations.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -42,6 +45,18 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/ColorGroupings',
     component: ColorGroupings
+  },
+  {
+    path: '/ColorCategories',
+    component: ColorCategories_Intro,
+  },
+  {
+    path: '/ColorCategories/Main',
+    component: ColorCategories_Main
+  },
+  {
+    path: '/ColorCombinations',
+    component: ColorCombinations
   }
 ]
 

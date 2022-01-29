@@ -1,5 +1,7 @@
 # practical-guide
 
+video link: https://www.bilibili.com/video/BV1Nm4y1D75h
+
 ## Project setup
 ```
 npm install

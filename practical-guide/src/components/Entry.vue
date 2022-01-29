@@ -108,7 +108,7 @@ export default defineComponent({
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
     padding: 0 10vw 0 10vw;
     line-height: 2;
@@ -127,10 +127,10 @@ export default defineComponent({
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 60vw;
+    width: 50vw;
     height: 100vh;
     .palette {
-      width: 10vw;
+      width: 12vw;
       height: 30vh;
       padding: 10px;
       margin: 0 15px;

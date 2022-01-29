@@ -1,6 +1,10 @@
 <template>
   <div class="container">
-    
+
+    <div class="next">
+      <Next href="/ColorCategories" />
+    </div>
+
     <div class="colors warm-colors">
       <h1>Warm (Active) Colors</h1>
       <div class="wrapper">
@@ -53,9 +57,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Next from './common/Next.vue'
 
 export default defineComponent({
   name: 'ColorGroupings',
+  components: {
+    Next
+  },
   data() {
     return {
       warmColors: [['C9CBA3', '000'], ['FFE1A8', '000'], ['E26D5C', 'fff'], ['723D46', 'fff'], ['472D30', 'fff']],
